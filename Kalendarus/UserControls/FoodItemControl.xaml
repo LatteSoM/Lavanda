@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Kalendarus.FoodItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kalendarus"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <CheckBox x:Name="isSelect" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image x:Name="pic" Grid.Column="1" Source="/Images/foodIco/sushi.png" />
+        <Label x:Name="foodName" Content="Sushi" Grid.Column="3"
+               FontSize="50" HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
+
+    </Grid>
+</UserControl>
